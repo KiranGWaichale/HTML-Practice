@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+header {
+    height: 50px;
+    width: 100%;
+    border: Solid black 1px;
+    background-color: darkblue;
+    
+}
+.header-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+}
+header img{
+    float: left;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: deepskyblue;
+    text-align: right;
+}
+section {
+    height: 600px;
+    width: 100%;
+}
+footer {
+    color: #ffffff;
+    text-align: left;
+    height: 30px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
