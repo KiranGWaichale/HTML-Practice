@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+		}
+		.info, .success, .warning, .error {
+			border: 1px solid;
+			margin: 10px 0px;
+			padding: 15px 10px 15px 50px;
+			background-repeat: no-repeat;
+			background-position: 10px center;
+		}	
+        	.info {
+			color: #00529B;
+			background-color: #BDE5F8;
+			background-image: url('img/info.png');
+		}
+		.success {
+			color: #4F8A10;
+			background-color: #DFF2BF;			
+		}
+		.warning {
+			color: #9F6000;
+			background-color: #FEEFB3;			
+		}
+		.error{
+			color: #D8000C;
+			background-color: #FFBABA;			
+		}		
+	</style>
+</head>
+<body>
+
+<p>Click on the button to toggle between message type. Change the text within tag and css type based on the message type. </p>
+
+<button onclick="myFunction('success')">Success</button>
+<button onclick="myFunction('error')">Error</button>
+<button onclick="myFunction('warning')">Warning</button>
+<div id="DisplayMessage" class="info">
+	Message will be displayed here. 
+</div>
+
+<script>
+function myFunction(type) {
+   var element = document.getElementById("DisplayMessage");	
+   element.className = type;   
+}
+</script>
+
+</body>
+</html>
